@@ -19,5 +19,10 @@ jobs:
       - name: Build Docker image
         run: docker build -t login-app .
 
+      - name: Run login tests
+        run: |
+          chmod +x test_login.sh
+          ./test_login.sh
+
       - name: Finish
-        run: echo "Pipeline finished"
+        run: echo "Pipeline finished successfully"
