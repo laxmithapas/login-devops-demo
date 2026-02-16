@@ -10,14 +10,4 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Build step
-        run: echo "Building the login app"
-
-      - name: Test step
-        run: echo "Running login tests"
-
-      - name: Finish
-        run: echo "CI pipeline completed successfully"
+      -
