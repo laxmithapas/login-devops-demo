@@ -13,9 +13,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Show environment
+        run: echo "Environment is $APP_ENV"
+
       - name: Build Docker image
-        run: |
-          docker build -t login-app .
+        run: docker build -t login-app .
 
       - name: Finish
-        run: echo "Docker build completed successfully"
+        run: echo "Pipeline finished"
